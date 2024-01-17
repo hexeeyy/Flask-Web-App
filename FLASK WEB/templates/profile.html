@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+    <div class="profcard">
+        <div class="profcard-header">
+            <h2 class="mb-0">User Profile</h2>
+        </div>
+        <div class="profcard-body">
+            <p><strong>Username:</strong> {{ user.username }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <a href="{{ url_for('logout') }}" class="profbtn btn-danger">Logout</a>
+        </div>
+    </div>
+{% endblock %}

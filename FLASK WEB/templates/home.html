@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <div class="header-container">
+        <div class="container"></div>
+    </div>
+
+   <div class="video-container">
+        <div class="video-background">
+            <video autoplay muted loop id="myVideo">
+                <source src="{{ url_for('static', filename='black_-_13495-_Original.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="home-content">
+                <h1>Welcome to the Algorithm!</h1>
+                <p>Expand your knowledge beyond your capacity.</p>
+        </div>
+    </div>
+
+    <div class="description-container">
+        <div class="container">
+          <div class="column"></div>
+              <i class="fa-brands fa-wix"></i>
+              <h2></h2>
+              <p2>Wix.com is a platform that lets you create a website without limits, with advanced features, powerful infrastructure and built-in marketing and business solutions.</p2>
+          <div class="column"></div>
+              <i class="fa-brands fa-figma"></i>
+              <h2></h2>
+              <p2>Figma is a platform for teams to design, prototype, develop, and collect feedback in one space.</p2>
+          <div class="column"></div>
+              <i class="fa-brands fa-internet-explorer"></i>
+              <h2></h2>
+              <p2>Internet Explorer 11 Release Preview brings the "best in class" spelling engine and dictionaries used by Microsoft to the browser.</p2>
+        </div>
+    </div>
+
+    <div class="getting-started-container">
+        <div class="get-container">
+            <!-- Getting Started content goes here -->
+            <h3>Getting Started</h3>
+            <p3>Go to the Gmail Website:
+
+              Open a web browser and go to www.algorithm.com.
+              Click on "Create account":
+              
+              Look for a "Create account" or "Sign up" option on the login page.
+              Fill in Your Information:
+              
+              Provide your first and last name.
+              Choose a unique and secure email address. If your desired email address is unavailable, Algorithm will suggest alternatives.
+              Create a strong password. Algorithm will provide guidance on password strength.
+              Complete the Form:
+              
+              Fill in other required information, such as your phone number, date of birth, and gender.
+              Set Up Recovery Options:
+              
+              Add a recovery phone number and email address. This helps you recover your account if you forget your password.
+              Verify Your Phone Number:
+              
+              Algorithm may send a verification code to your phone. Enter the code to verify your phone number.
+              Agree to Terms and Conditions:
+              
+              Read and accept the terms of service and privacy policy.
+              Personalize Your Account:
+              
+              Add a profile picture and customize your account settings if desired.
+              Welcome to Gmail:
+              
+              Once you've completed these steps, you should be taken to your new Algorithm inbox.</p3>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="get-container">
+            <!-- Additional content goes here -->
+            <h3>Explore More</h3>
+            <p3>Welcome to Algorithm Hub, where innovation meets education! At Algorithm Hub, we are passionate about empowering individuals to thrive in the dynamic world of technology. Whether you're a coding enthusiast, aspiring web developer, or a tech professional aiming to upskill, our platform is designed to cater to your learning needs.</p3>
+        </div>
+    </div>
+
+    <div class="new-container">
+    </div>
+
+    <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+
+  <div class="my-container">
+     <div class="card">
+       <div class="face face1">
+         <div class="my-content">
+            <i class="fab fa-windows"></i>            
+            <h4>Windows</h4>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="my-content">
+           <p4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p4>
+           <a href="#" type="button">Read More</a>
+         </div>
+       </div>
+    </div>
+    
+    <div class="card">
+       <div class="face face1">
+         <div class="my-content">
+      <i class="fab fa-android"></i>               <h4>Android</h4>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="my-content">
+           <p4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p4>
+           <a href="#" type="button">Read More</a>
+         </div>
+       </div>
+    </div>
+    
+    
+    <div class="card">
+       <div class="face face1">
+         <div class="my-content">
+           <i class="fab fa-apple"></i>
+            <h4>Apple</h4>
+         </div>
+       </div>
+       <div class="face face2">
+         <div class="my-content">
+           <p4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p4>
+           <a href="#" type="button">Read More</a>
+         </div>
+       </div>
+    </div>
+  </div>
+
+{% endblock %}

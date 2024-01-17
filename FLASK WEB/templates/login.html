@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Log In{% endblock %}
+
+{% block content %}
+    <div class="card-app2">
+        <video autoplay muted loop id="myVideo">
+            <source src="{{ url_for('static', filename='black_-_13495-_Original.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="card-header2">
+            <h7 class="mb-0">Log In</h7>
+        </div>
+        <div class="card-body2">
+            <form method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <label for="identifier">Email or Username:</label>
+                    <input type="text" name="identifier" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn2 btn-primary">Log In</button>
+            </form>
+            <p7 class="mt-3">Don't have an account? <a href="{{ url_for('register') }}">Sign up here</a>.</p7>
+        </div>
+    </div>
+{% endblock %}
